@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>SkyRealEstate</title>
+    <link rel="stylesheet" href="/styles.css">
+    <style>
+        /* 通用样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* 头部样式 */
+        .header {
+            width: 90%;
+            margin: 0 auto;
+            padding: 1rem 0;
+            background-color: skyblue;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header img {
+            max-width: 150px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* 主体内容样式 */
+        .main {
+            padding: 2rem;
+        }
+
+        .search-options {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .search-methods, .direct-search {
+            background-color: #ffffff;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-methods {
+            flex: 2;
+            background-color: rgb(128, 255, 128);
+        }
+
+        .direct-search {
+            flex: 1;
+            margin-left: 2rem;
+        }
+
+        .methods {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .method {
+            flex: 1;
+            min-width: 150px;
+            text-align: center;
+            background-color: #e0f2f1;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .method a {
+            display: block;
+            padding: 1rem;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .method a:hover {
+            color: #007bff;
+        }
+
+        .station {
+            background-image: url('/images/railways.jpg');
+        }
+
+        .map {
+            background-image: url('/images/map.jpg');
+        }
+
+        .address {
+            background-image: url('/images/addresses.jpg');
+        }
+
+        .store {
+            background-image: url('/images/stores.jpg');
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <img src="/images/logo.png" alt="Logo">
+            <nav>
+                <ul>
+                    <li><a href="/buy" th:href="@{/buy}">買いたい</a></li>
+                    <li><a href="/rent" th:href="@{/rent}">借りたい</a></li>
+                    <li><a href="/mypage" th:href="@{/mypage}">マイページ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="search-options">
+            <div class="search-methods">
+                <h2>探し方を選択</h2>
+                <div class="methods">
+                    <div class="method station">
+                        <a href="/search/station" th:href="@{/search/station}">
+                            沿線・駅から探す
+                        </a>
+                    </div>
+                    <div class="method map">
+                        <a href="/search/map" th:href="@{/search/map}">
+                            地図から探す
+                        </a>
+                    </div>
+                    <div class="method address">
+                        <a href="/search/address" th:href="@{/search/address}">
+                            住所から探す
+                        </a>
+                    </div>
+                    <div class="method store">
+                        <a href="/search/store" th:href="@{/search/store}">
+                            店舗から探す
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="direct-search">
+                <h2>駅名を直接入力</h2>
+                <form action="/search" method="get">
+                    <label for="station">お探しの駅を入力</label>
+                    <input type="text" id="station" name="station" placeholder="駅名を入力">
+                    <button type="submit">検索</button>
+                </form>
+
+                <h3>間取りを選択</h3>
+                <div class="options">
+                    <label><input type="checkbox" name="room" value="1K"> 1K</label>
+                    <label><input type="checkbox" name="room" value="2K"> 2K</label>
+                    <label><input type="checkbox" name="room" value="3K"> 3K</label>
+                    <!-- 更多选项 -->
+                </div>
+
+                <h3>家賃を選択</h3>
+                <div class="options">
+                    <select name="rent">
+                        <option value="">価格帯を選択</option>
+                        <option value="0-50000">0-5万</option>
+                        <option value="50000-100000">5万-10万</option>
+                        <!-- 更多选项 -->
+                    </select>
+                </div>
+                <button type="submit">エイッと検索</button>
+            </div>
+        </section>
+
+        <section class="promotion">
+            <img src="/images/promotion.png" alt="Promotion">
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <h3>ひとり暮らしの方向け</h3>
+            </div>
+            <div class="feature">
+                <h3>敷金・礼金0</h3>
+            </div>
+            <div class="feature">
+                <h3>インターネット無料</h3>
+            </div>
+            <!-- 更多功能块 -->
+        </section>
+    </main>
+</body>
+</html>

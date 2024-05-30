@@ -1,0 +1,79 @@
+<script>
+        const tx = document.querySelector('#tx')
+        const total=document.querySelector('.total')
+
+        tx.addEventListener('focus',function(){
+            total.style.opacity = 1
+        })
+        tx.addEventListener('blur',function(){
+            total.style.opacity = 0
+        })
+
+        tx.addEventListener('input',function(){
+           let len = tx.value.length
+
+
+           total.innerHTML=`${len}/200文字`
+           //total.innerHTML=len+'/200文字'
+        })
+
+        const name=document.querySelector('.name')
+        const text=document.querySelector('.text')
+        const time=document.querySelector('.time')
+        const button=document.querySelector('button')
+        const item=document.querySelector('.item')
+
+        button.addEventListener('click',function(){
+
+
+            // if(tx.value.trim()!==''){
+            //     item.style.display = 'block'
+            // text.innerHTML=tx.value
+            // }
+
+            // tx.value=''
+            // total.innerHTML='0/200文字'
+            tosubmit()
+        })
+
+        tx.addEventListener('keyup',function(e){
+
+            if (e.code==='Enter'){
+                tosubmit()
+            }
+
+        })
+
+        function tosubmit(){
+            if(tx.value.trim()!==''){
+                item.style.display = 'block'
+            text.innerHTML=tx.value
+            time.innerHTML=getTime()
+
+            }
+
+            tx.value=''
+            total.innerHTML='0/200文字'
+        }
+        
+        function getTime(){
+        const date =new Date()
+       var year = date.getFullYear() 
+       var month=date.getMonth()+1
+       var day=date.getDate()
+       var week = date.getDay()
+       var hour =date.getHours()
+       var min = date.getMinutes()
+       var s=date.getSeconds()
+
+       
+        month = month < 10 ? '0' + month : month
+        day = day < 10 ? '0' + day : day
+        hour = hour < 10 ? '0' + hour : hour
+        min = min < 10 ? '0' + min : min
+        s = s < 10 ? '0' +s : s
+
+        var nowTime=year+'年'+month+'月'+day+'日'+'&nbsp&nbsp'+'星期'+week+'&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp'+hour+'点'+min+'分'+s+'秒'
+        return nowTime
+        debugger
+    }

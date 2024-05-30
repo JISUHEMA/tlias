@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form th:action="@{/file/upload} "method="post" enctype="multipart/form-data">
+		<input type="file" name="file">
+		<input type="submit" value="上传">
+	</form>
+	<br>
+	<hr>
+
+	<a th:href="@{/file/download?filename=run-20240509141103.log}">run-20240509141103.log</a><br>
+	<a th:href="@{/file/download?filename=OIP20240509175248596.jpg}">OIP20240509175248596.jpg</a><br>
+	<a th:href="@{/file/download?filename=新建 文本文档.txt}">新建 文本文档.txt</a>
+	
+</body>
+</html>

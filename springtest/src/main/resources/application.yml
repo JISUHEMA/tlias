@@ -1,0 +1,10 @@
+name : 田中
+age : 24
+birthday : 2002/12/12
+gender : true
+
+
+server:
+  port: 2024 #port设定
+  servlet:
+     context-path: /eden-test #工程名字

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>新規登録</title>
+    <link rel="stylesheet" href="/register/styles.css">
+    <style>
+        /* 模态框样式 */
+        .modal {
+            display: none; /* 默认隐藏 */
+            position: fixed; /* 固定位置 */
+            z-index: 1; /* 设置在最前 */
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto; /* 启用滚动条 */
+            background-color: rgb(0,0,0); /* 黑色背景 */
+            background-color: rgba(0,0,0,0.4); /* 透明黑色背景 */
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto; /* 中央显示 */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 40%; /* 宽度 */
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="/images/logo.png" alt="Logo">
+    </header>
+
+    <main class="main-content">
+        <section class="registration-section">
+            <div class="registration-form">
+                <h2>新規登録</h2>
+                <form action="/register" method="post">
+                    <label for="email">メールアドレス</label>
+                    <input type="email" id="email" name="email" placeholder="mail@mail.com" required>
+                    
+                    <label for="confirm-email">メールアドレス（確認のため、もう一度入力してください）</label>
+                    <input type="email" id="confirm-email" name="confirm-email" placeholder="mail@mail.com" required>
+                    
+                    <p>個人情報保護方針</p>
+                    <p>ご提供いただいた個人情報は、不動産の購入・売却、それらの物件・作り・営業に関するサポートのため、三井不動産リアルティグループにて利用させていただきます。</p>
+                    <a href="#" id="privacy-link">個人情報の取扱いについて</a>
+
+                    <p>マイページサービス規定</p>
+                    <p>サービスをご確認いただき、ご同意の上、ご登録をお願いいたします。</p>
+                    <a href="#" id="service-link">マイページサービス規定について</a>
+
+                    <button type="submit">同意して仮登録メールを送信</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- 個人情報の取扱いについて 模态框 -->
+    <div id="privacy-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" data-target="privacy-modal">&times;</span>
+            <h2>個人情報の取扱いについて</h2>
+            <p>
+                1. 個人情報の取得、利用、提供<br>
+                お客さまの個人情報の取得は、適法かつ公正な手段によってこれを行い、個人情報の利用目的等の必要事項について取得時に明示するか、当社ウェブサイト等にて告知します。適正な手続きのもと、利用目的の範囲で個人情報の取り扱いをいたします。また、個人情報を第三者に提供・開示等する場合は、法令の定める手続きに則って行います。
+            </p>
+            <p>
+                2. 利用する目的<br>
+                弊社
+            </p>
+            <p>...（这里可以继续填写完整的利用同意书内容）...</p>
+        </div>
+    </div>
+
+    <!-- マイページサービス規定について 模态框 -->
+    <div id="service-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" data-target="service-modal">&times;</span>
+            <h2>マイページサービス規定について</h2>
+            <p>
+                ここにマイページサービス規定の内容を記入してください...
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // 获取所有模态框
+        var modals = document.getElementsByClassName("modal");
+
+        // 获取打开模态框的链接
+        var link1 = document.getElementById("privacy-link");
+        var link2 = document.getElementById("service-link");
+
+        // 获取所有关闭按钮
+        var spans = document.getElementsByClassName("close");
+
+        // 点击链接打开对应模态框
+        link1.onclick = function() {
+            document.getElementById("privacy-modal").style.display = "block";
+        }
+
+        link2.onclick = function() {
+            document.getElementById("service-modal").style.display = "block";
+        }
+
+        // 点击关闭按钮关闭对应模态框
+        for (var i = 0; i < spans.length; i++) {
+            spans[i].onclick = function() {
+                var target = this.getAttribute("data-target");
+                document.getElementById(target).style.display = "none";
+            }
+        }
+
+        // 点击模态框外任何地方关闭模态框
+        window.onclick = function(event) {
+            if (event.target.className === "modal") {
+                event.target.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

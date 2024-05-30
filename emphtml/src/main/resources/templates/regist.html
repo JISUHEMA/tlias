@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>注册</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #wrap {
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            max-width: 600px;
+            width: 90%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        #header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            border-radius: 10px 10px 0 0;
+        }
+        #rightheader {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        #rightheader p {
+            margin: 0;
+            font-size: 14px;
+        }
+        #title {
+            font-size: 24px;
+            margin: 0;
+        }
+        #title a {
+            color: white;
+            text-decoration: none;
+        }
+        #content {
+            padding: 30px 20px;
+        }
+        #content h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        .form_table {
+            width: 100%;
+            margin: 0 auto;
+            border-collapse: separate;
+            border-spacing: 10px 0;
+        }
+        .form_table td {
+            padding: 10px;
+        }
+        .form_table td label {
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+            margin-right: 10px;
+        }
+        .inputgri {
+            width: calc(100% - 120px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .button {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        #footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 0 0 10px 10px;
+        }
+        .captcha {
+            display: flex;
+            align-items: center;
+        }
+        .captcha img {
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .captcha a {
+            margin-left: 10px;
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .captcha a:hover {
+            text-decoration: underline;
+        }
+        .gender-row {
+            display: flex;
+            align-items: center;
+        }
+        .gender-row input {
+            margin-left: 10px;
+        }
+    </style>
+    <script>
+        function validateForm() {
+            const username = document.getElementById('username').value;
+            const realname = document.getElementById('realname').value;
+            const password = document.getElementById('password').value;
+
+            if (username === '') {
+                alert('ユーザー名は必須です');
+                return false;
+            }
+            if (realname === '') {
+                alert('名前は必須です');
+                return false;
+            }
+            if (password === '') {
+                alert('パスワードは必須です');
+                return false;
+            }
+            return true;
+        }
+
+        function changeImageCode() {
+            document.getElementById('num').src = '[[@{/user/generateImageCode}]]?' + (new Date()).getTime();
+        }
+    </script>
+</head>
+<body>
+<div id="wrap">
+    <div id="top_content">
+        <div id="header">
+            <div id="rightheader">
+                <p>
+                    2009/11/20
+                    <br />
+                </p>
+            </div>
+            <div id="topheader">
+                <h1 id="title">
+                    <a href="#">商品管理システム</a>
+                </h1>
+            </div>
+            <div id="navigation">
+            </div>
+        </div>
+        <div id="content">
+            <p id="whereami"></p>
+            <h1>新規</h1>
+            <h3 style="color: red; margin:5px;"><span th:text="${param.msg}"></span></h3>
+            <form th:action="@{/user/register}" method="post" onsubmit="return validateForm()">
+                <table cellpadding="0" cellspacing="0" border="0" class="form_table">
+                    <tr>
+                        <td align="right">
+                            <label for="username">ユーザー名:</label>
+                        </td>
+                        <td align="left">
+                            <input type="text" class="inputgri" name="username" id="username" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="realname">名前:</label>
+                        </td>
+                        <td align="left">
+                            <input type="text" class="inputgri" name="realname" id="realname" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="password">パスワード:</label>
+                        </td>
+                        <td align="left">
+                            <input type="password" class="inputgri" name="password" id="password" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="gender">性別:</label>
+                        </td>
+                        <td align="left" class="gender-row">
+                            <input type="radio" name="gender" value="1" checked="checked"/> 男
+                            <input type="radio" name="gender" value="0"/> 女
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <label for="code">検証コード:</label>
+                        </td>
+                        <td align="left" class="captcha">
+                            <input type="text" name="code" class="inputgri" id="code" />
+                            <img id="num" th:src="@{/user/generateImageCode}" onclick="changeImageCode()" />
+                            <a href="javascript:;" onclick="changeImageCode()">変換</a>
+                        </td>
+                    </tr>
+                </table>
+                <p>
+                    <input type="submit" class="button" value="提出する &raquo;" />
+                </p>
+            </form>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footer_bg">
+            ABC@126.com
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,633 @@
+2024-05-23 13:29:14 - com.eden.EmphtmlApplication - INFO - Starting EmphtmlApplication using Java 17.0.10 with PID 21000 (C:\KuGou\eclipaeAA\workspace202404\emphtml\target\classes started by Qq145 in C:\KuGou\eclipaeAA\workspace202404\emphtml)
+2024-05-23 13:29:14 - com.eden.EmphtmlApplication - INFO - Starting EmphtmlApplication using Java 17.0.10 with PID 21000 (C:\KuGou\eclipaeAA\workspace202404\emphtml\target\classes started by Qq145 in C:\KuGou\eclipaeAA\workspace202404\emphtml)
+2024-05-23 13:29:14 - com.eden.EmphtmlApplication - DEBUG - Running with Spring Boot v3.2.5, Spring v6.1.6
+2024-05-23 13:29:14 - com.eden.EmphtmlApplication - DEBUG - Running with Spring Boot v3.2.5, Spring v6.1.6
+2024-05-23 13:29:14 - com.eden.EmphtmlApplication - INFO - No active profile set, falling back to 1 default profile: "default"
+2024-05-23 13:29:14 - com.eden.EmphtmlApplication - INFO - No active profile set, falling back to 1 default profile: "default"
+2024-05-23 13:29:15 - o.s.b.w.e.tomcat.TomcatWebServer - INFO - Tomcat initialized with port 20252 (http)
+2024-05-23 13:29:15 - o.a.coyote.http11.Http11NioProtocol - INFO - Initializing ProtocolHandler ["http-nio-20252"]
+2024-05-23 13:29:15 - o.a.catalina.core.StandardService - INFO - Starting service [Tomcat]
+2024-05-23 13:29:15 - o.a.catalina.core.StandardEngine - INFO - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23 13:29:15 - o.a.c.c.C.[.[.[/empthymeleaf] - INFO - Initializing Spring embedded WebApplicationContext
+2024-05-23 13:29:15 - o.s.b.w.s.c.ServletWebServerApplicationContext - INFO - Root WebApplicationContext: initialization completed in 939 ms
+2024-05-23 13:29:16 - o.a.coyote.http11.Http11NioProtocol - INFO - Starting ProtocolHandler ["http-nio-20252"]
+2024-05-23 13:29:16 - o.s.b.w.e.tomcat.TomcatWebServer - INFO - Tomcat started on port 20252 (http) with context path '/empthymeleaf'
+2024-05-23 13:29:16 - com.eden.EmphtmlApplication - INFO - Started EmphtmlApplication in 1.796 seconds (process running for 2.538)
+2024-05-23 13:29:16 - com.eden.EmphtmlApplication - INFO - Started EmphtmlApplication in 1.796 seconds (process running for 2.538)
+2024-05-23 13:29:26 - o.a.c.c.C.[.[.[/empthymeleaf] - INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-23 13:29:26 - o.s.web.servlet.DispatcherServlet - INFO - Initializing Servlet 'dispatcherServlet'
+2024-05-23 13:29:26 - o.s.web.servlet.DispatcherServlet - INFO - Completed initialization in 1 ms
+2024-05-23 13:29:32 - com.eden.controller.UserController - INFO - ユーザー名:tom,パスワード:123
+2024-05-23 13:29:32 - com.eden.controller.UserController - INFO - ユーザー名:tom,パスワード:123
+2024-05-23 13:29:32 - com.zaxxer.hikari.HikariDataSource - INFO - HikariPool-1 - Starting...
+2024-05-23 13:29:32 - com.zaxxer.hikari.pool.HikariPool - INFO - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@723a9b97
+2024-05-23 13:29:32 - com.zaxxer.hikari.HikariDataSource - INFO - HikariPool-1 - Start completed.
+2024-05-23 13:29:32 - com.eden.dao.UserDao.findByUserName - DEBUG - ==>  Preparing: select id,username,realname,password,gender from user where username=?
+2024-05-23 13:29:32 - com.eden.dao.UserDao.findByUserName - DEBUG - ==>  Preparing: select id,username,realname,password,gender from user where username=?
+2024-05-23 13:29:32 - com.eden.dao.UserDao.findByUserName - DEBUG - ==> Parameters: tom(String)
+2024-05-23 13:29:32 - com.eden.dao.UserDao.findByUserName - DEBUG - ==> Parameters: tom(String)
+2024-05-23 13:29:32 - com.eden.dao.UserDao.findByUserName - DEBUG - <==      Total: 1
+2024-05-23 13:29:32 - com.eden.dao.UserDao.findByUserName - DEBUG - <==      Total: 1
+2024-05-23 13:29:33 - c.eden.controller.EmployeeController - INFO - 全部社員を紹会する
+2024-05-23 13:29:33 - c.eden.controller.EmployeeController - INFO - 全部社員を紹会する
+2024-05-23 13:29:33 - com.eden.dao.EmployeeDao.lists - DEBUG - ==>  Preparing: select id,name,salary,birthday,photo from employee
+2024-05-23 13:29:33 - com.eden.dao.EmployeeDao.lists - DEBUG - ==>  Preparing: select id,name,salary,birthday,photo from employee
+2024-05-23 13:29:33 - com.eden.dao.EmployeeDao.lists - DEBUG - ==> Parameters: 
+2024-05-23 13:29:33 - com.eden.dao.EmployeeDao.lists - DEBUG - ==> Parameters: 
+2024-05-23 13:29:33 - com.eden.dao.EmployeeDao.lists - DEBUG - <==      Total: 5
+2024-05-23 13:29:33 - com.eden.dao.EmployeeDao.lists - DEBUG - <==      Total: 5
+2024-05-23 13:30:11 - c.eden.controller.EmployeeController - INFO - 開始時間:,完了時間:,最高工资:,最低工资:,名前:,
+2024-05-23 13:30:11 - c.eden.controller.EmployeeController - INFO - 開始時間:,完了時間:,最高工资:,最低工资:,名前:,
+2024-05-23 13:30:11 - com.eden.dao.EmployeeDao.searchEmp - DEBUG - ==>  Preparing: select id,name,salary,birthday,photo from employee
+2024-05-23 13:30:11 - com.eden.dao.EmployeeDao.searchEmp - DEBUG - ==>  Preparing: select id,name,salary,birthday,photo from employee
+2024-05-23 13:30:11 - com.eden.dao.EmployeeDao.searchEmp - DEBUG - ==> Parameters: 
+2024-05-23 13:30:11 - com.eden.dao.EmployeeDao.searchEmp - DEBUG - ==> Parameters: 
+2024-05-23 13:30:11 - com.eden.dao.EmployeeDao.searchEmp - DEBUG - <==      Total: 5
+2024-05-23 13:30:11 - com.eden.dao.EmployeeDao.searchEmp - DEBUG - <==      Total: 5
+2024-05-23 13:30:12 - com.eden.dao.EmployeeDao.findById - DEBUG - ==>  Preparing: select id,name,salary,birthday,photo from employee where id=?
+2024-05-23 13:30:12 - com.eden.dao.EmployeeDao.findById - DEBUG - ==>  Preparing: select id,name,salary,birthday,photo from employee where id=?
+2024-05-23 13:30:12 - com.eden.dao.EmployeeDao.findById - DEBUG - ==> Parameters: 1(Integer)
+2024-05-23 13:30:12 - com.eden.dao.EmployeeDao.findById - DEBUG - ==> Parameters: 1(Integer)
+2024-05-23 13:30:12 - com.eden.dao.EmployeeDao.findById - DEBUG - <==      Total: 1
+2024-05-23 13:30:12 - com.eden.dao.EmployeeDao.findById - DEBUG - <==      Total: 1
+2024-05-23 13:30:12 - c.eden.controller.EmployeeController - INFO - 更新ID:1
+2024-05-23 13:30:12 - c.eden.controller.EmployeeController - INFO - 更新ID:1
+2024-05-23 13:30:34 - c.eden.controller.EmployeeController - INFO - 名前:,给料:null,誕生日:Mon Jun 22 00:00:00 GMT+09:00 1998
+2024-05-23 13:30:34 - c.eden.controller.EmployeeController - INFO - 名前:,给料:null,誕生日:Mon Jun 22 00:00:00 GMT+09:00 1998
+2024-05-23 13:30:34 - c.eden.controller.EmployeeController - INFO - ファイルの名:,ファイルのサイズ:0,アップロード:C:\KuGou\eclipaeAA\workspace202404\emphtml\upload
+2024-05-23 13:30:34 - c.eden.controller.EmployeeController - INFO - ファイルの名:,ファイルのサイズ:0,アップロード:C:\KuGou\eclipaeAA\workspace202404\emphtml\upload
+2024-05-23 13:30:34 - o.a.c.c.C.[.[.[.[dispatcherServlet] - ERROR - Servlet.service() for servlet [dispatcherServlet] in context with path [/empthymeleaf] threw exception [Request processing failed: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0] with root cause
+java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4606)
+	at java.base/java.lang.String.substring(String.java:2709)
+	at com.eden.controller.EmployeeController.uploadPhoto(EmployeeController.java:135)
+	at com.eden.controller.EmployeeController.save(EmployeeController.java:114)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2024-05-23 13:31:31 - com.eden.controller.UserController - INFO - ユーザー名:tom,パスワード:123
+2024-05-23 13:31:31 - com.eden.controller.UserController - INFO - ユーザー名:tom,パスワード:123
+2024-05-23 13:31:31 - com.eden.dao.UserDao.findByUserName - DEBUG - ==>  Preparing: select id,username,realname,password,gender from user where username=?
+2024-05-23 13:31:31 - com.eden.dao.UserDao.findByUserName - DEBUG - ==>  Preparing: select id,username,realname,password,gender from user where username=?
+2024-05-23 13:31:31 - com.eden.dao.UserDao.findByUserName - DEBUG - ==> Parameters: tom(String)
+2024-05-23 13:31:31 - com.eden.dao.UserDao.findByUserName - DEBUG - ==> Parameters: tom(String)
+2024-05-23 13:31:31 - com.eden.dao.UserDao.findByUserName - DEBUG - <==      Total: 1
+2024-05-23 13:31:31 - com.eden.dao.UserDao.findByUserName - DEBUG - <==      Total: 1
+2024-05-23 13:31:31 - c.eden.controller.EmployeeController - INFO - 全部社員を紹会する
+2024-05-23 13:31:31 - c.eden.controller.EmployeeController - INFO - 全部社員を紹会する
+2024-05-23 13:31:31 - com.eden.dao.EmployeeDao.lists - DEBUG - ==>  Preparing: select id,name,salary,birthday,photo from employee
+2024-05-23 13:31:31 - com.eden.dao.EmployeeDao.lists - DEBUG - ==>  Preparing: select id,name,salary,birthday,photo from employee
+2024-05-23 13:31:31 - com.eden.dao.EmployeeDao.lists - DEBUG - ==> Parameters: 
+2024-05-23 13:31:31 - com.eden.dao.EmployeeDao.lists - DEBUG - ==> Parameters: 
+2024-05-23 13:31:31 - com.eden.dao.EmployeeDao.lists - DEBUG - <==      Total: 5
+2024-05-23 13:31:31 - com.eden.dao.EmployeeDao.lists - DEBUG - <==      Total: 5
+2024-05-23 13:31:33 - com.eden.dao.EmployeeDao.findById - DEBUG - ==>  Preparing: select id,name,salary,birthday,photo from employee where id=?
+2024-05-23 13:31:33 - com.eden.dao.EmployeeDao.findById - DEBUG - ==>  Preparing: select id,name,salary,birthday,photo from employee where id=?
+2024-05-23 13:31:33 - com.eden.dao.EmployeeDao.findById - DEBUG - ==> Parameters: 1(Integer)
+2024-05-23 13:31:33 - com.eden.dao.EmployeeDao.findById - DEBUG - ==> Parameters: 1(Integer)
+2024-05-23 13:31:33 - com.eden.dao.EmployeeDao.findById - DEBUG - <==      Total: 1
+2024-05-23 13:31:33 - com.eden.dao.EmployeeDao.findById - DEBUG - <==      Total: 1
+2024-05-23 13:31:33 - c.eden.controller.EmployeeController - INFO - 更新ID:1
+2024-05-23 13:31:33 - c.eden.controller.EmployeeController - INFO - 更新ID:1
+2024-05-23 13:35:14 - com.eden.controller.UserController - INFO - ユーザー名:tom,パスワード:123
+2024-05-23 13:35:14 - com.eden.controller.UserController - INFO - ユーザー名:tom,パスワード:123
+2024-05-23 13:35:14 - com.eden.dao.UserDao.findByUserName - DEBUG - ==>  Preparing: select id,username,realname,password,gender from user where username=?
+2024-05-23 13:35:14 - com.eden.dao.UserDao.findByUserName - DEBUG - ==>  Preparing: select id,username,realname,password,gender from user where username=?
+2024-05-23 13:35:14 - com.eden.dao.UserDao.findByUserName - DEBUG - ==> Parameters: tom(String)
+2024-05-23 13:35:14 - com.eden.dao.UserDao.findByUserName - DEBUG - ==> Parameters: tom(String)
+2024-05-23 13:35:14 - com.eden.dao.UserDao.findByUserName - DEBUG - <==      Total: 1
+2024-05-23 13:35:14 - com.eden.dao.UserDao.findByUserName - DEBUG - <==      Total: 1
+2024-05-23 13:35:14 - c.eden.controller.EmployeeController - INFO - 全部社員を紹会する
+2024-05-23 13:35:14 - c.eden.controller.EmployeeController - INFO - 全部社員を紹会する
+2024-05-23 13:35:14 - com.eden.dao.EmployeeDao.lists - DEBUG - ==>  Preparing: select id,name,salary,birthday,photo from employee
+2024-05-23 13:35:14 - com.eden.dao.EmployeeDao.lists - DEBUG - ==>  Preparing: select id,name,salary,birthday,photo from employee
+2024-05-23 13:35:14 - com.eden.dao.EmployeeDao.lists - DEBUG - ==> Parameters: 
+2024-05-23 13:35:14 - com.eden.dao.EmployeeDao.lists - DEBUG - ==> Parameters: 
+2024-05-23 13:35:14 - com.eden.dao.EmployeeDao.lists - DEBUG - <==      Total: 5
+2024-05-23 13:35:14 - com.eden.dao.EmployeeDao.lists - DEBUG - <==      Total: 5
+2024-05-23 13:35:22 - com.eden.dao.EmployeeDao.findById - DEBUG - ==>  Preparing: select id,name,salary,birthday,photo from employee where id=?
+2024-05-23 13:35:22 - com.eden.dao.EmployeeDao.findById - DEBUG - ==>  Preparing: select id,name,salary,birthday,photo from employee where id=?
+2024-05-23 13:35:22 - com.eden.dao.EmployeeDao.findById - DEBUG - ==> Parameters: 2(Integer)
+2024-05-23 13:35:22 - com.eden.dao.EmployeeDao.findById - DEBUG - ==> Parameters: 2(Integer)
+2024-05-23 13:35:22 - com.eden.dao.EmployeeDao.findById - DEBUG - <==      Total: 1
+2024-05-23 13:35:22 - com.eden.dao.EmployeeDao.findById - DEBUG - <==      Total: 1
+2024-05-23 13:35:22 - c.eden.controller.EmployeeController - INFO - 更新ID:2
+2024-05-23 13:35:22 - c.eden.controller.EmployeeController - INFO - 更新ID:2
+2024-05-23 13:35:46 - c.eden.controller.EmployeeController - INFO - 名前:测试,给料:890000.0,誕生日:Mon Jun 22 00:00:00 GMT+09:00 1998
+2024-05-23 13:35:46 - c.eden.controller.EmployeeController - INFO - 名前:测试,给料:890000.0,誕生日:Mon Jun 22 00:00:00 GMT+09:00 1998
+2024-05-23 13:35:46 - c.eden.controller.EmployeeController - INFO - ファイルの名:,ファイルのサイズ:0,アップロード:C:\KuGou\eclipaeAA\workspace202404\emphtml\upload
+2024-05-23 13:35:46 - c.eden.controller.EmployeeController - INFO - ファイルの名:,ファイルのサイズ:0,アップロード:C:\KuGou\eclipaeAA\workspace202404\emphtml\upload
+2024-05-23 13:35:46 - o.a.c.c.C.[.[.[.[dispatcherServlet] - ERROR - Servlet.service() for servlet [dispatcherServlet] in context with path [/empthymeleaf] threw exception [Request processing failed: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0] with root cause
+java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4606)
+	at java.base/java.lang.String.substring(String.java:2709)
+	at com.eden.controller.EmployeeController.uploadPhoto(EmployeeController.java:135)
+	at com.eden.controller.EmployeeController.save(EmployeeController.java:114)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2024-05-23 13:38:16 - c.eden.controller.EmployeeController - INFO - 名前:测试,给料:890000.0,誕生日:Mon Jun 22 00:00:00 GMT+09:00 1998
+2024-05-23 13:38:16 - c.eden.controller.EmployeeController - INFO - 名前:测试,给料:890000.0,誕生日:Mon Jun 22 00:00:00 GMT+09:00 1998
+2024-05-23 13:38:16 - c.eden.controller.EmployeeController - INFO - ファイルの名:,ファイルのサイズ:0,アップロード:C:\KuGou\eclipaeAA\workspace202404\emphtml\upload
+2024-05-23 13:38:16 - c.eden.controller.EmployeeController - INFO - ファイルの名:,ファイルのサイズ:0,アップロード:C:\KuGou\eclipaeAA\workspace202404\emphtml\upload
+2024-05-23 13:38:16 - o.a.c.c.C.[.[.[.[dispatcherServlet] - ERROR - Servlet.service() for servlet [dispatcherServlet] in context with path [/empthymeleaf] threw exception [Request processing failed: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0] with root cause
+java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4606)
+	at java.base/java.lang.String.substring(String.java:2709)
+	at com.eden.controller.EmployeeController.uploadPhoto(EmployeeController.java:135)
+	at com.eden.controller.EmployeeController.save(EmployeeController.java:114)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2024-05-23 13:51:48 - o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - INFO - Application shutdown requested.
+2024-05-23 13:51:48 - o.a.coyote.http11.Http11NioProtocol - INFO - Stopping ProtocolHandler ["http-nio-20252"]
+2024-05-23 13:51:48 - com.zaxxer.hikari.HikariDataSource - INFO - HikariPool-1 - Shutdown initiated...
+2024-05-23 13:51:48 - com.zaxxer.hikari.HikariDataSource - INFO - HikariPool-1 - Shutdown completed.
+2024-05-23 13:51:50 - com.eden.EmphtmlApplication - INFO - Starting EmphtmlApplication using Java 17.0.10 with PID 3080 (C:\KuGou\eclipaeAA\workspace202404\emphtml\target\classes started by Qq145 in C:\KuGou\eclipaeAA\workspace202404\emphtml)
+2024-05-23 13:51:50 - com.eden.EmphtmlApplication - INFO - Starting EmphtmlApplication using Java 17.0.10 with PID 3080 (C:\KuGou\eclipaeAA\workspace202404\emphtml\target\classes started by Qq145 in C:\KuGou\eclipaeAA\workspace202404\emphtml)
+2024-05-23 13:51:50 - com.eden.EmphtmlApplication - DEBUG - Running with Spring Boot v3.2.5, Spring v6.1.6
+2024-05-23 13:51:50 - com.eden.EmphtmlApplication - DEBUG - Running with Spring Boot v3.2.5, Spring v6.1.6
+2024-05-23 13:51:50 - com.eden.EmphtmlApplication - INFO - No active profile set, falling back to 1 default profile: "default"
+2024-05-23 13:51:50 - com.eden.EmphtmlApplication - INFO - No active profile set, falling back to 1 default profile: "default"
+2024-05-23 13:51:50 - o.s.b.w.e.tomcat.TomcatWebServer - INFO - Tomcat initialized with port 20252 (http)
+2024-05-23 13:51:51 - o.a.coyote.http11.Http11NioProtocol - INFO - Initializing ProtocolHandler ["http-nio-20252"]
+2024-05-23 13:51:51 - o.a.catalina.core.StandardService - INFO - Starting service [Tomcat]
+2024-05-23 13:51:51 - o.a.catalina.core.StandardEngine - INFO - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23 13:51:51 - o.a.c.c.C.[.[.[/empthymeleaf] - INFO - Initializing Spring embedded WebApplicationContext
+2024-05-23 13:51:51 - o.s.b.w.s.c.ServletWebServerApplicationContext - INFO - Root WebApplicationContext: initialization completed in 731 ms
+2024-05-23 13:51:51 - o.a.coyote.http11.Http11NioProtocol - INFO - Starting ProtocolHandler ["http-nio-20252"]
+2024-05-23 13:51:51 - o.s.b.w.e.tomcat.TomcatWebServer - INFO - Tomcat started on port 20252 (http) with context path '/empthymeleaf'
+2024-05-23 13:51:51 - com.eden.EmphtmlApplication - INFO - Started EmphtmlApplication in 1.528 seconds (process running for 2.214)
+2024-05-23 13:51:51 - com.eden.EmphtmlApplication - INFO - Started EmphtmlApplication in 1.528 seconds (process running for 2.214)
+2024-05-23 13:51:56 - o.a.c.c.C.[.[.[/empthymeleaf] - INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-23 13:51:56 - o.s.web.servlet.DispatcherServlet - INFO - Initializing Servlet 'dispatcherServlet'
+2024-05-23 13:51:56 - o.s.web.servlet.DispatcherServlet - INFO - Completed initialization in 1 ms
+2024-05-23 13:52:01 - com.eden.controller.UserController - INFO - ユーザー名:tom,パスワード:123
+2024-05-23 13:52:01 - com.eden.controller.UserController - INFO - ユーザー名:tom,パスワード:123
+2024-05-23 13:52:01 - com.zaxxer.hikari.HikariDataSource - INFO - HikariPool-1 - Starting...
+2024-05-23 13:52:01 - com.zaxxer.hikari.pool.HikariPool - INFO - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@77dfe383
+2024-05-23 13:52:01 - com.zaxxer.hikari.HikariDataSource - INFO - HikariPool-1 - Start completed.
+2024-05-23 13:52:01 - com.eden.dao.UserDao.findByUserName - DEBUG - ==>  Preparing: select id,username,realname,password,gender from user where username=?
+2024-05-23 13:52:01 - com.eden.dao.UserDao.findByUserName - DEBUG - ==>  Preparing: select id,username,realname,password,gender from user where username=?
+2024-05-23 13:52:01 - com.eden.dao.UserDao.findByUserName - DEBUG - ==> Parameters: tom(String)
+2024-05-23 13:52:01 - com.eden.dao.UserDao.findByUserName - DEBUG - ==> Parameters: tom(String)
+2024-05-23 13:52:02 - com.eden.dao.UserDao.findByUserName - DEBUG - <==      Total: 1
+2024-05-23 13:52:02 - com.eden.dao.UserDao.findByUserName - DEBUG - <==      Total: 1
+2024-05-23 13:52:02 - c.eden.controller.EmployeeController - INFO - 全部社員を紹会する
+2024-05-23 13:52:02 - c.eden.controller.EmployeeController - INFO - 全部社員を紹会する
+2024-05-23 13:52:02 - com.eden.dao.EmployeeDao.lists - DEBUG - ==>  Preparing: select id,name,salary,birthday,photo from employee
+2024-05-23 13:52:02 - com.eden.dao.EmployeeDao.lists - DEBUG - ==>  Preparing: select id,name,salary,birthday,photo from employee
+2024-05-23 13:52:02 - com.eden.dao.EmployeeDao.lists - DEBUG - ==> Parameters: 
+2024-05-23 13:52:02 - com.eden.dao.EmployeeDao.lists - DEBUG - ==> Parameters: 
+2024-05-23 13:52:02 - com.eden.dao.EmployeeDao.lists - DEBUG - <==      Total: 5
+2024-05-23 13:52:02 - com.eden.dao.EmployeeDao.lists - DEBUG - <==      Total: 5
+2024-05-23 13:52:06 - c.eden.controller.EmployeeController - INFO - 名前:,给料:null,誕生日:Mon Jun 22 00:00:00 GMT+09:00 1998
+2024-05-23 13:52:06 - c.eden.controller.EmployeeController - INFO - 名前:,给料:null,誕生日:Mon Jun 22 00:00:00 GMT+09:00 1998
+2024-05-23 13:52:06 - c.eden.controller.EmployeeController - INFO - ファイルの名:,ファイルのサイズ:0,アップロード:C:\KuGou\eclipaeAA\workspace202404\emphtml\upload
+2024-05-23 13:52:06 - c.eden.controller.EmployeeController - INFO - ファイルの名:,ファイルのサイズ:0,アップロード:C:\KuGou\eclipaeAA\workspace202404\emphtml\upload
+2024-05-23 13:52:06 - o.a.c.c.C.[.[.[.[dispatcherServlet] - ERROR - Servlet.service() for servlet [dispatcherServlet] in context with path [/empthymeleaf] threw exception [Request processing failed: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0] with root cause
+java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4606)
+	at java.base/java.lang.String.substring(String.java:2709)
+	at com.eden.controller.EmployeeController.uploadPhoto(EmployeeController.java:155)
+	at com.eden.controller.EmployeeController.save(EmployeeController.java:117)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2024-05-23 13:54:01 - o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - INFO - Application shutdown requested.
+2024-05-23 13:54:01 - o.a.coyote.http11.Http11NioProtocol - INFO - Stopping ProtocolHandler ["http-nio-20252"]
+2024-05-23 13:54:01 - com.zaxxer.hikari.HikariDataSource - INFO - HikariPool-1 - Shutdown initiated...
+2024-05-23 13:54:01 - com.zaxxer.hikari.HikariDataSource - INFO - HikariPool-1 - Shutdown completed.
+2024-05-23 13:54:03 - com.eden.EmphtmlApplication - INFO - Starting EmphtmlApplication using Java 17.0.10 with PID 27432 (C:\KuGou\eclipaeAA\workspace202404\emphtml\target\classes started by Qq145 in C:\KuGou\eclipaeAA\workspace202404\emphtml)
+2024-05-23 13:54:03 - com.eden.EmphtmlApplication - INFO - Starting EmphtmlApplication using Java 17.0.10 with PID 27432 (C:\KuGou\eclipaeAA\workspace202404\emphtml\target\classes started by Qq145 in C:\KuGou\eclipaeAA\workspace202404\emphtml)
+2024-05-23 13:54:03 - com.eden.EmphtmlApplication - DEBUG - Running with Spring Boot v3.2.5, Spring v6.1.6
+2024-05-23 13:54:03 - com.eden.EmphtmlApplication - DEBUG - Running with Spring Boot v3.2.5, Spring v6.1.6
+2024-05-23 13:54:03 - com.eden.EmphtmlApplication - INFO - No active profile set, falling back to 1 default profile: "default"
+2024-05-23 13:54:03 - com.eden.EmphtmlApplication - INFO - No active profile set, falling back to 1 default profile: "default"
+2024-05-23 13:54:04 - o.s.b.w.e.tomcat.TomcatWebServer - INFO - Tomcat initialized with port 20252 (http)
+2024-05-23 13:54:04 - o.a.coyote.http11.Http11NioProtocol - INFO - Initializing ProtocolHandler ["http-nio-20252"]
+2024-05-23 13:54:04 - o.a.catalina.core.StandardService - INFO - Starting service [Tomcat]
+2024-05-23 13:54:04 - o.a.catalina.core.StandardEngine - INFO - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23 13:54:04 - o.a.c.c.C.[.[.[/empthymeleaf] - INFO - Initializing Spring embedded WebApplicationContext
+2024-05-23 13:54:04 - o.s.b.w.s.c.ServletWebServerApplicationContext - INFO - Root WebApplicationContext: initialization completed in 741 ms
+2024-05-23 13:54:05 - o.a.coyote.http11.Http11NioProtocol - INFO - Starting ProtocolHandler ["http-nio-20252"]
+2024-05-23 13:54:05 - o.s.b.w.e.tomcat.TomcatWebServer - INFO - Tomcat started on port 20252 (http) with context path '/empthymeleaf'
+2024-05-23 13:54:05 - com.eden.EmphtmlApplication - INFO - Started EmphtmlApplication in 1.544 seconds (process running for 2.128)
+2024-05-23 13:54:05 - com.eden.EmphtmlApplication - INFO - Started EmphtmlApplication in 1.544 seconds (process running for 2.128)
+2024-05-23 13:54:10 - o.a.c.c.C.[.[.[/empthymeleaf] - INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-23 13:54:10 - o.s.web.servlet.DispatcherServlet - INFO - Initializing Servlet 'dispatcherServlet'
+2024-05-23 13:54:10 - o.s.web.servlet.DispatcherServlet - INFO - Completed initialization in 0 ms
+2024-05-23 13:54:13 - com.eden.controller.UserController - INFO - ユーザー名:tom,パスワード:123
+2024-05-23 13:54:13 - com.eden.controller.UserController - INFO - ユーザー名:tom,パスワード:123
+2024-05-23 13:54:13 - com.zaxxer.hikari.HikariDataSource - INFO - HikariPool-1 - Starting...
+2024-05-23 13:54:14 - com.zaxxer.hikari.pool.HikariPool - INFO - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@33535cdc
+2024-05-23 13:54:14 - com.zaxxer.hikari.HikariDataSource - INFO - HikariPool-1 - Start completed.
+2024-05-23 13:54:14 - com.eden.dao.UserDao.findByUserName - DEBUG - ==>  Preparing: select id,username,realname,password,gender from user where username=?
+2024-05-23 13:54:14 - com.eden.dao.UserDao.findByUserName - DEBUG - ==>  Preparing: select id,username,realname,password,gender from user where username=?
+2024-05-23 13:54:14 - com.eden.dao.UserDao.findByUserName - DEBUG - ==> Parameters: tom(String)
+2024-05-23 13:54:14 - com.eden.dao.UserDao.findByUserName - DEBUG - ==> Parameters: tom(String)
+2024-05-23 13:54:14 - com.eden.dao.UserDao.findByUserName - DEBUG - <==      Total: 1
+2024-05-23 13:54:14 - com.eden.dao.UserDao.findByUserName - DEBUG - <==      Total: 1
+2024-05-23 13:54:14 - c.eden.controller.EmployeeController - INFO - 全部社員を紹会する
+2024-05-23 13:54:14 - c.eden.controller.EmployeeController - INFO - 全部社員を紹会する
+2024-05-23 13:54:14 - com.eden.dao.EmployeeDao.lists - DEBUG - ==>  Preparing: select id,name,salary,birthday,photo from employee
+2024-05-23 13:54:14 - com.eden.dao.EmployeeDao.lists - DEBUG - ==>  Preparing: select id,name,salary,birthday,photo from employee
+2024-05-23 13:54:14 - com.eden.dao.EmployeeDao.lists - DEBUG - ==> Parameters: 
+2024-05-23 13:54:14 - com.eden.dao.EmployeeDao.lists - DEBUG - ==> Parameters: 
+2024-05-23 13:54:14 - com.eden.dao.EmployeeDao.lists - DEBUG - <==      Total: 5
+2024-05-23 13:54:14 - com.eden.dao.EmployeeDao.lists - DEBUG - <==      Total: 5
+2024-05-23 13:56:45 - com.eden.controller.UserController - INFO - ユーザー名:tom,パスワード:2323
+2024-05-23 13:56:45 - com.eden.controller.UserController - INFO - ユーザー名:tom,パスワード:2323
+2024-05-23 13:56:45 - com.eden.dao.UserDao.findByUserName - DEBUG - ==>  Preparing: select id,username,realname,password,gender from user where username=?
+2024-05-23 13:56:45 - com.eden.dao.UserDao.findByUserName - DEBUG - ==>  Preparing: select id,username,realname,password,gender from user where username=?
+2024-05-23 13:56:45 - com.eden.dao.UserDao.findByUserName - DEBUG - ==> Parameters: tom(String)
+2024-05-23 13:56:45 - com.eden.dao.UserDao.findByUserName - DEBUG - ==> Parameters: tom(String)
+2024-05-23 13:56:45 - com.eden.dao.UserDao.findByUserName - DEBUG - <==      Total: 1
+2024-05-23 13:56:45 - com.eden.dao.UserDao.findByUserName - DEBUG - <==      Total: 1
+2024-05-23 14:00:17 - com.eden.controller.UserController - INFO - ユーザー名:tom,パスワード:123
+2024-05-23 14:00:17 - com.eden.controller.UserController - INFO - ユーザー名:tom,パスワード:123
+2024-05-23 14:00:17 - com.eden.dao.UserDao.findByUserName - DEBUG - ==>  Preparing: select id,username,realname,password,gender from user where username=?
+2024-05-23 14:00:17 - com.eden.dao.UserDao.findByUserName - DEBUG - ==>  Preparing: select id,username,realname,password,gender from user where username=?
+2024-05-23 14:00:17 - com.eden.dao.UserDao.findByUserName - DEBUG - ==> Parameters: tom(String)
+2024-05-23 14:00:17 - com.eden.dao.UserDao.findByUserName - DEBUG - ==> Parameters: tom(String)
+2024-05-23 14:00:17 - com.eden.dao.UserDao.findByUserName - DEBUG - <==      Total: 1
+2024-05-23 14:00:17 - com.eden.dao.UserDao.findByUserName - DEBUG - <==      Total: 1
+2024-05-23 14:00:17 - c.eden.controller.EmployeeController - INFO - 全部社員を紹会する
+2024-05-23 14:00:17 - c.eden.controller.EmployeeController - INFO - 全部社員を紹会する
+2024-05-23 14:00:17 - com.eden.dao.EmployeeDao.lists - DEBUG - ==>  Preparing: select id,name,salary,birthday,photo from employee
+2024-05-23 14:00:17 - com.eden.dao.EmployeeDao.lists - DEBUG - ==>  Preparing: select id,name,salary,birthday,photo from employee
+2024-05-23 14:00:17 - com.eden.dao.EmployeeDao.lists - DEBUG - ==> Parameters: 
+2024-05-23 14:00:17 - com.eden.dao.EmployeeDao.lists - DEBUG - ==> Parameters: 
+2024-05-23 14:00:17 - com.eden.dao.EmployeeDao.lists - DEBUG - <==      Total: 5
+2024-05-23 14:00:17 - com.eden.dao.EmployeeDao.lists - DEBUG - <==      Total: 5
+2024-05-23 14:00:45 - c.eden.controller.EmployeeController - INFO - 名前:测试,给料:3600.0,誕生日:Mon Jun 22 00:00:00 GMT+09:00 1998
+2024-05-23 14:00:45 - c.eden.controller.EmployeeController - INFO - 名前:测试,给料:3600.0,誕生日:Mon Jun 22 00:00:00 GMT+09:00 1998
+2024-05-23 14:00:45 - c.eden.controller.EmployeeController - INFO - ファイルの名:avatar.jpg,ファイルのサイズ:544,アップロード:C:\KuGou\eclipaeAA\workspace202404\emphtml\upload
+2024-05-23 14:00:45 - c.eden.controller.EmployeeController - INFO - ファイルの名:avatar.jpg,ファイルのサイズ:544,アップロード:C:\KuGou\eclipaeAA\workspace202404\emphtml\upload
+2024-05-23 14:00:45 - com.eden.dao.EmployeeDao.save - DEBUG - ==>  Preparing: insert into employee values(?,?,?,?,?)
+2024-05-23 14:00:45 - com.eden.dao.EmployeeDao.save - DEBUG - ==>  Preparing: insert into employee values(?,?,?,?,?)
+2024-05-23 14:00:45 - com.eden.dao.EmployeeDao.save - DEBUG - ==> Parameters: null, 测试(String), 3600.0(Double), 1998-06-22 00:00:00.0(Timestamp), avatar20240523140045060.jpg(String)
+2024-05-23 14:00:45 - com.eden.dao.EmployeeDao.save - DEBUG - ==> Parameters: null, 测试(String), 3600.0(Double), 1998-06-22 00:00:00.0(Timestamp), avatar20240523140045060.jpg(String)
+2024-05-23 14:00:45 - com.eden.dao.EmployeeDao.save - DEBUG - <==    Updates: 1
+2024-05-23 14:00:45 - com.eden.dao.EmployeeDao.save - DEBUG - <==    Updates: 1
+2024-05-23 14:00:45 - c.eden.controller.EmployeeController - INFO - 全部社員を紹会する
+2024-05-23 14:00:45 - c.eden.controller.EmployeeController - INFO - 全部社員を紹会する
+2024-05-23 14:00:45 - com.eden.dao.EmployeeDao.lists - DEBUG - ==>  Preparing: select id,name,salary,birthday,photo from employee
+2024-05-23 14:00:45 - com.eden.dao.EmployeeDao.lists - DEBUG - ==>  Preparing: select id,name,salary,birthday,photo from employee
+2024-05-23 14:00:45 - com.eden.dao.EmployeeDao.lists - DEBUG - ==> Parameters: 
+2024-05-23 14:00:45 - com.eden.dao.EmployeeDao.lists - DEBUG - ==> Parameters: 
+2024-05-23 14:00:45 - com.eden.dao.EmployeeDao.lists - DEBUG - <==      Total: 6
+2024-05-23 14:00:45 - com.eden.dao.EmployeeDao.lists - DEBUG - <==      Total: 6
+2024-05-23 14:00:49 - c.eden.controller.EmployeeController - INFO - 開始時間:,完了時間:,最高工资:,最低工资:,名前:,
+2024-05-23 14:00:49 - c.eden.controller.EmployeeController - INFO - 開始時間:,完了時間:,最高工资:,最低工资:,名前:,
+2024-05-23 14:00:49 - com.eden.dao.EmployeeDao.searchEmp - DEBUG - ==>  Preparing: select id,name,salary,birthday,photo from employee
+2024-05-23 14:00:49 - com.eden.dao.EmployeeDao.searchEmp - DEBUG - ==>  Preparing: select id,name,salary,birthday,photo from employee
+2024-05-23 14:00:49 - com.eden.dao.EmployeeDao.searchEmp - DEBUG - ==> Parameters: 
+2024-05-23 14:00:49 - com.eden.dao.EmployeeDao.searchEmp - DEBUG - ==> Parameters: 
+2024-05-23 14:00:49 - com.eden.dao.EmployeeDao.searchEmp - DEBUG - <==      Total: 6
+2024-05-23 14:00:49 - com.eden.dao.EmployeeDao.searchEmp - DEBUG - <==      Total: 6
+2024-05-23 14:00:49 - c.eden.controller.EmployeeController - INFO - 開始時間:,完了時間:,最高工资:,最低工资:,名前:,
+2024-05-23 14:00:49 - c.eden.controller.EmployeeController - INFO - 開始時間:,完了時間:,最高工资:,最低工资:,名前:,
+2024-05-23 14:00:49 - com.eden.dao.EmployeeDao.searchEmp - DEBUG - ==>  Preparing: select id,name,salary,birthday,photo from employee
+2024-05-23 14:00:49 - com.eden.dao.EmployeeDao.searchEmp - DEBUG - ==>  Preparing: select id,name,salary,birthday,photo from employee
+2024-05-23 14:00:49 - com.eden.dao.EmployeeDao.searchEmp - DEBUG - ==> Parameters: 
+2024-05-23 14:00:49 - com.eden.dao.EmployeeDao.searchEmp - DEBUG - ==> Parameters: 
+2024-05-23 14:00:49 - com.eden.dao.EmployeeDao.searchEmp - DEBUG - <==      Total: 6
+2024-05-23 14:00:49 - com.eden.dao.EmployeeDao.searchEmp - DEBUG - <==      Total: 6
+2024-05-23 14:00:50 - com.eden.dao.EmployeeDao.findById - DEBUG - ==>  Preparing: select id,name,salary,birthday,photo from employee where id=?
+2024-05-23 14:00:50 - com.eden.dao.EmployeeDao.findById - DEBUG - ==>  Preparing: select id,name,salary,birthday,photo from employee where id=?
+2024-05-23 14:00:50 - com.eden.dao.EmployeeDao.findById - DEBUG - ==> Parameters: 1(Integer)
+2024-05-23 14:00:50 - com.eden.dao.EmployeeDao.findById - DEBUG - ==> Parameters: 1(Integer)
+2024-05-23 14:00:50 - com.eden.dao.EmployeeDao.findById - DEBUG - <==      Total: 1
+2024-05-23 14:00:50 - com.eden.dao.EmployeeDao.findById - DEBUG - <==      Total: 1
+2024-05-23 14:00:50 - c.eden.controller.EmployeeController - INFO - 更新ID:1
+2024-05-23 14:00:50 - c.eden.controller.EmployeeController - INFO - 更新ID:1
+2024-05-23 14:01:06 - com.eden.controller.UserController - INFO - ユーザー名:,パスワード:
+2024-05-23 14:01:06 - com.eden.controller.UserController - INFO - ユーザー名:,パスワード:
+2024-05-23 14:01:06 - com.eden.dao.UserDao.findByUserName - DEBUG - ==>  Preparing: select id,username,realname,password,gender from user where username=?
+2024-05-23 14:01:06 - com.eden.dao.UserDao.findByUserName - DEBUG - ==>  Preparing: select id,username,realname,password,gender from user where username=?
+2024-05-23 14:01:06 - com.eden.dao.UserDao.findByUserName - DEBUG - ==> Parameters: (String)
+2024-05-23 14:01:06 - com.eden.dao.UserDao.findByUserName - DEBUG - ==> Parameters: (String)
+2024-05-23 14:01:06 - com.eden.dao.UserDao.findByUserName - DEBUG - <==      Total: 1
+2024-05-23 14:01:06 - com.eden.dao.UserDao.findByUserName - DEBUG - <==      Total: 1
+2024-05-23 14:01:06 - c.eden.controller.EmployeeController - INFO - 全部社員を紹会する
+2024-05-23 14:01:06 - c.eden.controller.EmployeeController - INFO - 全部社員を紹会する
+2024-05-23 14:01:06 - com.eden.dao.EmployeeDao.lists - DEBUG - ==>  Preparing: select id,name,salary,birthday,photo from employee
+2024-05-23 14:01:06 - com.eden.dao.EmployeeDao.lists - DEBUG - ==>  Preparing: select id,name,salary,birthday,photo from employee
+2024-05-23 14:01:06 - com.eden.dao.EmployeeDao.lists - DEBUG - ==> Parameters: 
+2024-05-23 14:01:06 - com.eden.dao.EmployeeDao.lists - DEBUG - ==> Parameters: 
+2024-05-23 14:01:06 - com.eden.dao.EmployeeDao.lists - DEBUG - <==      Total: 6
+2024-05-23 14:01:06 - com.eden.dao.EmployeeDao.lists - DEBUG - <==      Total: 6
+2024-05-23 14:01:58 - com.eden.controller.UserController - INFO - ユーザー名:,パスワード:
+2024-05-23 14:01:58 - com.eden.controller.UserController - INFO - ユーザー名:,パスワード:
+2024-05-23 14:01:58 - com.eden.dao.UserDao.findByUserName - DEBUG - ==>  Preparing: select id,username,realname,password,gender from user where username=?
+2024-05-23 14:01:58 - com.eden.dao.UserDao.findByUserName - DEBUG - ==>  Preparing: select id,username,realname,password,gender from user where username=?
+2024-05-23 14:01:58 - com.eden.dao.UserDao.findByUserName - DEBUG - ==> Parameters: (String)
+2024-05-23 14:01:58 - com.eden.dao.UserDao.findByUserName - DEBUG - ==> Parameters: (String)
+2024-05-23 14:01:58 - com.eden.dao.UserDao.findByUserName - DEBUG - <==      Total: 1
+2024-05-23 14:01:58 - com.eden.dao.UserDao.findByUserName - DEBUG - <==      Total: 1
+2024-05-23 14:01:58 - c.eden.controller.EmployeeController - INFO - 全部社員を紹会する
+2024-05-23 14:01:58 - c.eden.controller.EmployeeController - INFO - 全部社員を紹会する
+2024-05-23 14:01:58 - com.eden.dao.EmployeeDao.lists - DEBUG - ==>  Preparing: select id,name,salary,birthday,photo from employee
+2024-05-23 14:01:58 - com.eden.dao.EmployeeDao.lists - DEBUG - ==>  Preparing: select id,name,salary,birthday,photo from employee
+2024-05-23 14:01:58 - com.eden.dao.EmployeeDao.lists - DEBUG - ==> Parameters: 
+2024-05-23 14:01:58 - com.eden.dao.EmployeeDao.lists - DEBUG - ==> Parameters: 
+2024-05-23 14:01:58 - com.eden.dao.EmployeeDao.lists - DEBUG - <==      Total: 6
+2024-05-23 14:01:58 - com.eden.dao.EmployeeDao.lists - DEBUG - <==      Total: 6
+2024-05-23 14:02:10 - c.eden.controller.EmployeeController - INFO - 開始時間:,完了時間:,最高工资:,最低工资:,名前:コ,
+2024-05-23 14:02:10 - c.eden.controller.EmployeeController - INFO - 開始時間:,完了時間:,最高工资:,最低工资:,名前:コ,
+2024-05-23 14:02:10 - com.eden.dao.EmployeeDao.searchEmp - DEBUG - ==>  Preparing: select id,name,salary,birthday,photo from employee WHERE name like concat('%',?,'%')
+2024-05-23 14:02:10 - com.eden.dao.EmployeeDao.searchEmp - DEBUG - ==>  Preparing: select id,name,salary,birthday,photo from employee WHERE name like concat('%',?,'%')
+2024-05-23 14:02:10 - com.eden.dao.EmployeeDao.searchEmp - DEBUG - ==> Parameters: コ(String)
+2024-05-23 14:02:10 - com.eden.dao.EmployeeDao.searchEmp - DEBUG - ==> Parameters: コ(String)
+2024-05-23 14:02:10 - com.eden.dao.EmployeeDao.searchEmp - DEBUG - <==      Total: 1
+2024-05-23 14:02:10 - com.eden.dao.EmployeeDao.searchEmp - DEBUG - <==      Total: 1
+2024-05-23 14:02:25 - c.eden.controller.EmployeeController - INFO - 開始時間:,完了時間:,最高工资:,最低工资:,名前:コ,
+2024-05-23 14:02:25 - c.eden.controller.EmployeeController - INFO - 開始時間:,完了時間:,最高工资:,最低工资:,名前:コ,
+2024-05-23 14:02:25 - com.eden.dao.EmployeeDao.searchEmp - DEBUG - ==>  Preparing: select id,name,salary,birthday,photo from employee WHERE name like concat('%',?,'%')
+2024-05-23 14:02:25 - com.eden.dao.EmployeeDao.searchEmp - DEBUG - ==>  Preparing: select id,name,salary,birthday,photo from employee WHERE name like concat('%',?,'%')
+2024-05-23 14:02:25 - com.eden.dao.EmployeeDao.searchEmp - DEBUG - ==> Parameters: コ(String)
+2024-05-23 14:02:25 - com.eden.dao.EmployeeDao.searchEmp - DEBUG - ==> Parameters: コ(String)
+2024-05-23 14:02:25 - com.eden.dao.EmployeeDao.searchEmp - DEBUG - <==      Total: 1
+2024-05-23 14:02:25 - com.eden.dao.EmployeeDao.searchEmp - DEBUG - <==      Total: 1
+2024-05-23 14:07:08 - com.eden.controller.UserController - INFO - ユーザー名:tom,名前:23,パスワード:123,性別:true:
+2024-05-23 14:07:08 - com.eden.controller.UserController - INFO - ユーザー名:tom,名前:23,パスワード:123,性別:true:
+2024-05-23 14:10:38 - com.eden.EmphtmlApplication - INFO - Starting EmphtmlApplication using Java 17.0.10 with PID 21164 (C:\KuGou\eclipaeAA\workspace202404\emphtml\target\classes started by Qq145 in C:\KuGou\eclipaeAA\workspace202404\emphtml)
+2024-05-23 14:10:38 - com.eden.EmphtmlApplication - INFO - Starting EmphtmlApplication using Java 17.0.10 with PID 21164 (C:\KuGou\eclipaeAA\workspace202404\emphtml\target\classes started by Qq145 in C:\KuGou\eclipaeAA\workspace202404\emphtml)
+2024-05-23 14:10:38 - com.eden.EmphtmlApplication - DEBUG - Running with Spring Boot v3.2.5, Spring v6.1.6
+2024-05-23 14:10:38 - com.eden.EmphtmlApplication - DEBUG - Running with Spring Boot v3.2.5, Spring v6.1.6
+2024-05-23 14:10:38 - com.eden.EmphtmlApplication - INFO - No active profile set, falling back to 1 default profile: "default"
+2024-05-23 14:10:38 - com.eden.EmphtmlApplication - INFO - No active profile set, falling back to 1 default profile: "default"
+2024-05-23 14:10:39 - o.s.b.w.e.tomcat.TomcatWebServer - INFO - Tomcat initialized with port 20252 (http)
+2024-05-23 14:10:39 - o.a.coyote.http11.Http11NioProtocol - INFO - Initializing ProtocolHandler ["http-nio-20252"]
+2024-05-23 14:10:39 - o.a.catalina.core.StandardService - INFO - Starting service [Tomcat]
+2024-05-23 14:10:39 - o.a.catalina.core.StandardEngine - INFO - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23 14:10:39 - o.a.c.c.C.[.[.[/empthymeleaf] - INFO - Initializing Spring embedded WebApplicationContext
+2024-05-23 14:10:39 - o.s.b.w.s.c.ServletWebServerApplicationContext - INFO - Root WebApplicationContext: initialization completed in 742 ms
+2024-05-23 14:10:39 - o.a.coyote.http11.Http11NioProtocol - INFO - Starting ProtocolHandler ["http-nio-20252"]
+2024-05-23 14:10:39 - o.s.b.w.e.tomcat.TomcatWebServer - INFO - Tomcat started on port 20252 (http) with context path '/empthymeleaf'
+2024-05-23 14:10:39 - com.eden.EmphtmlApplication - INFO - Started EmphtmlApplication in 1.561 seconds (process running for 2.18)
+2024-05-23 14:10:39 - com.eden.EmphtmlApplication - INFO - Started EmphtmlApplication in 1.561 seconds (process running for 2.18)
+2024-05-23 14:11:02 - o.a.c.c.C.[.[.[/empthymeleaf] - INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-23 14:11:02 - o.s.web.servlet.DispatcherServlet - INFO - Initializing Servlet 'dispatcherServlet'
+2024-05-23 14:11:02 - o.s.web.servlet.DispatcherServlet - INFO - Completed initialization in 1 ms
+2024-05-23 14:33:29 - com.eden.EmphtmlApplication - INFO - Starting EmphtmlApplication using Java 17.0.10 with PID 25400 (C:\KuGou\eclipaeAA\workspace202404\emphtml\target\classes started by Qq145 in C:\KuGou\eclipaeAA\workspace202404\emphtml)
+2024-05-23 14:33:29 - com.eden.EmphtmlApplication - INFO - Starting EmphtmlApplication using Java 17.0.10 with PID 25400 (C:\KuGou\eclipaeAA\workspace202404\emphtml\target\classes started by Qq145 in C:\KuGou\eclipaeAA\workspace202404\emphtml)
+2024-05-23 14:33:29 - com.eden.EmphtmlApplication - DEBUG - Running with Spring Boot v3.2.5, Spring v6.1.6
+2024-05-23 14:33:29 - com.eden.EmphtmlApplication - DEBUG - Running with Spring Boot v3.2.5, Spring v6.1.6
+2024-05-23 14:33:29 - com.eden.EmphtmlApplication - INFO - No active profile set, falling back to 1 default profile: "default"
+2024-05-23 14:33:29 - com.eden.EmphtmlApplication - INFO - No active profile set, falling back to 1 default profile: "default"
+2024-05-23 14:33:30 - o.s.b.w.e.tomcat.TomcatWebServer - INFO - Tomcat initialized with port 20252 (http)
+2024-05-23 14:33:30 - o.a.coyote.http11.Http11NioProtocol - INFO - Initializing ProtocolHandler ["http-nio-20252"]
+2024-05-23 14:33:30 - o.a.catalina.core.StandardService - INFO - Starting service [Tomcat]
+2024-05-23 14:33:30 - o.a.catalina.core.StandardEngine - INFO - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23 14:33:30 - o.a.c.c.C.[.[.[/empthymeleaf] - INFO - Initializing Spring embedded WebApplicationContext
+2024-05-23 14:33:30 - o.s.b.w.s.c.ServletWebServerApplicationContext - INFO - Root WebApplicationContext: initialization completed in 778 ms
+2024-05-23 14:33:31 - o.a.coyote.http11.Http11NioProtocol - INFO - Starting ProtocolHandler ["http-nio-20252"]
+2024-05-23 14:33:31 - o.s.b.w.e.tomcat.TomcatWebServer - INFO - Tomcat started on port 20252 (http) with context path '/empthymeleaf'
+2024-05-23 14:33:31 - com.eden.EmphtmlApplication - INFO - Started EmphtmlApplication in 1.63 seconds (process running for 2.368)
+2024-05-23 14:33:31 - com.eden.EmphtmlApplication - INFO - Started EmphtmlApplication in 1.63 seconds (process running for 2.368)
+2024-05-23 14:33:47 - o.a.c.c.C.[.[.[/empthymeleaf] - INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-23 14:33:47 - o.s.web.servlet.DispatcherServlet - INFO - Initializing Servlet 'dispatcherServlet'
+2024-05-23 14:33:47 - o.s.web.servlet.DispatcherServlet - INFO - Completed initialization in 1 ms
+2024-05-23 14:47:49 - o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - INFO - Application shutdown requested.
+2024-05-23 14:47:49 - o.a.coyote.http11.Http11NioProtocol - INFO - Stopping ProtocolHandler ["http-nio-20252"]
+2024-05-23 14:47:51 - com.eden.EmphtmlApplication - INFO - Starting EmphtmlApplication using Java 17.0.10 with PID 2148 (C:\KuGou\eclipaeAA\workspace202404\emphtml\target\classes started by Qq145 in C:\KuGou\eclipaeAA\workspace202404\emphtml)
+2024-05-23 14:47:51 - com.eden.EmphtmlApplication - INFO - Starting EmphtmlApplication using Java 17.0.10 with PID 2148 (C:\KuGou\eclipaeAA\workspace202404\emphtml\target\classes started by Qq145 in C:\KuGou\eclipaeAA\workspace202404\emphtml)
+2024-05-23 14:47:51 - com.eden.EmphtmlApplication - DEBUG - Running with Spring Boot v3.2.5, Spring v6.1.6
+2024-05-23 14:47:51 - com.eden.EmphtmlApplication - DEBUG - Running with Spring Boot v3.2.5, Spring v6.1.6
+2024-05-23 14:47:51 - com.eden.EmphtmlApplication - INFO - No active profile set, falling back to 1 default profile: "default"
+2024-05-23 14:47:51 - com.eden.EmphtmlApplication - INFO - No active profile set, falling back to 1 default profile: "default"
+2024-05-23 14:47:52 - o.s.b.w.e.tomcat.TomcatWebServer - INFO - Tomcat initialized with port 20252 (http)
+2024-05-23 14:47:52 - o.a.coyote.http11.Http11NioProtocol - INFO - Initializing ProtocolHandler ["http-nio-20252"]
+2024-05-23 14:47:52 - o.a.catalina.core.StandardService - INFO - Starting service [Tomcat]
+2024-05-23 14:47:52 - o.a.catalina.core.StandardEngine - INFO - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23 14:47:52 - o.a.c.c.C.[.[.[/empthymeleaf] - INFO - Initializing Spring embedded WebApplicationContext
+2024-05-23 14:47:52 - o.s.b.w.s.c.ServletWebServerApplicationContext - INFO - Root WebApplicationContext: initialization completed in 818 ms
+2024-05-23 14:47:52 - o.a.coyote.http11.Http11NioProtocol - INFO - Starting ProtocolHandler ["http-nio-20252"]
+2024-05-23 14:47:52 - o.s.b.w.e.tomcat.TomcatWebServer - INFO - Tomcat started on port 20252 (http) with context path '/empthymeleaf'
+2024-05-23 14:47:52 - com.eden.EmphtmlApplication - INFO - Started EmphtmlApplication in 1.646 seconds (process running for 2.27)
+2024-05-23 14:47:52 - com.eden.EmphtmlApplication - INFO - Started EmphtmlApplication in 1.646 seconds (process running for 2.27)
+2024-05-23 14:47:58 - o.a.c.c.C.[.[.[/empthymeleaf] - INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-23 14:47:58 - o.s.web.servlet.DispatcherServlet - INFO - Initializing Servlet 'dispatcherServlet'
+2024-05-23 14:47:58 - o.s.web.servlet.DispatcherServlet - INFO - Completed initialization in 0 ms
+2024-05-23 14:51:43 - o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - INFO - Application shutdown requested.
+2024-05-23 14:51:43 - o.a.coyote.http11.Http11NioProtocol - INFO - Stopping ProtocolHandler ["http-nio-20252"]
+2024-05-23 14:51:45 - com.eden.EmphtmlApplication - INFO - Starting EmphtmlApplication using Java 17.0.10 with PID 28936 (C:\KuGou\eclipaeAA\workspace202404\emphtml\target\classes started by Qq145 in C:\KuGou\eclipaeAA\workspace202404\emphtml)
+2024-05-23 14:51:45 - com.eden.EmphtmlApplication - INFO - Starting EmphtmlApplication using Java 17.0.10 with PID 28936 (C:\KuGou\eclipaeAA\workspace202404\emphtml\target\classes started by Qq145 in C:\KuGou\eclipaeAA\workspace202404\emphtml)
+2024-05-23 14:51:45 - com.eden.EmphtmlApplication - DEBUG - Running with Spring Boot v3.2.5, Spring v6.1.6
+2024-05-23 14:51:45 - com.eden.EmphtmlApplication - DEBUG - Running with Spring Boot v3.2.5, Spring v6.1.6
+2024-05-23 14:51:45 - com.eden.EmphtmlApplication - INFO - No active profile set, falling back to 1 default profile: "default"
+2024-05-23 14:51:45 - com.eden.EmphtmlApplication - INFO - No active profile set, falling back to 1 default profile: "default"
+2024-05-23 14:51:45 - o.s.b.w.e.tomcat.TomcatWebServer - INFO - Tomcat initialized with port 20252 (http)
+2024-05-23 14:51:45 - o.a.coyote.http11.Http11NioProtocol - INFO - Initializing ProtocolHandler ["http-nio-20252"]
+2024-05-23 14:51:45 - o.a.catalina.core.StandardService - INFO - Starting service [Tomcat]
+2024-05-23 14:51:45 - o.a.catalina.core.StandardEngine - INFO - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23 14:51:45 - o.a.c.c.C.[.[.[/empthymeleaf] - INFO - Initializing Spring embedded WebApplicationContext
+2024-05-23 14:51:45 - o.s.b.w.s.c.ServletWebServerApplicationContext - INFO - Root WebApplicationContext: initialization completed in 784 ms
+2024-05-23 14:51:46 - o.a.coyote.http11.Http11NioProtocol - INFO - Starting ProtocolHandler ["http-nio-20252"]
+2024-05-23 14:51:46 - o.s.b.w.e.tomcat.TomcatWebServer - INFO - Tomcat started on port 20252 (http) with context path '/empthymeleaf'
+2024-05-23 14:51:46 - com.eden.EmphtmlApplication - INFO - Started EmphtmlApplication in 1.62 seconds (process running for 2.226)
+2024-05-23 14:51:46 - com.eden.EmphtmlApplication - INFO - Started EmphtmlApplication in 1.62 seconds (process running for 2.226)
+2024-05-23 14:51:48 - o.a.c.c.C.[.[.[/empthymeleaf] - INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-23 14:51:48 - o.s.web.servlet.DispatcherServlet - INFO - Initializing Servlet 'dispatcherServlet'
+2024-05-23 14:51:48 - o.s.web.servlet.DispatcherServlet - INFO - Completed initialization in 1 ms
+2024-05-23 14:52:26 - com.eden.controller.UserController - INFO - ユーザー名:,パスワード:
+2024-05-23 14:52:26 - com.eden.controller.UserController - INFO - ユーザー名:,パスワード:
+2024-05-23 14:52:26 - com.zaxxer.hikari.HikariDataSource - INFO - HikariPool-1 - Starting...
+2024-05-23 14:52:26 - com.zaxxer.hikari.pool.HikariPool - INFO - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1f956073
+2024-05-23 14:52:26 - com.zaxxer.hikari.HikariDataSource - INFO - HikariPool-1 - Start completed.
+2024-05-23 14:52:26 - com.eden.dao.UserDao.findByUserName - DEBUG - ==>  Preparing: select id,username,realname,password,gender from user where username=?
+2024-05-23 14:52:26 - com.eden.dao.UserDao.findByUserName - DEBUG - ==>  Preparing: select id,username,realname,password,gender from user where username=?
+2024-05-23 14:52:26 - com.eden.dao.UserDao.findByUserName - DEBUG - ==> Parameters: (String)
+2024-05-23 14:52:26 - com.eden.dao.UserDao.findByUserName - DEBUG - ==> Parameters: (String)
+2024-05-23 14:52:26 - com.eden.dao.UserDao.findByUserName - DEBUG - <==      Total: 0
+2024-05-23 14:52:26 - com.eden.dao.UserDao.findByUserName - DEBUG - <==      Total: 0

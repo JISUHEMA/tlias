@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" th:href="@{/demo.css}">
+<script th:src="@{/demo.js}"></script>
+</head>
+<body>
+	<h1>Thymeleaf语法</h1>
+	
+	<h4>受け取るStringデータ:<span th:text="${name}"></span></h4>
+	<h4> 受け取るIntegerデータ:<span th:text="${age}"></h4>
+	<h4> 受け取るlabelデータ:<span th:utext="${access}"></h4>
+	
+	<hr>
+	
+	<h4> 受け取るobjectデータ:<span th:text="${user.id}"></h4>
+	<h4> 受け取るobjectデータ:<span th:text="${user.name}"></h4>
+	<h4> 受け取るobjectデータ:<span th:text="${user.salary}"></h4>
+	<h4> 受け取るobjectデータ:<span th:text="${user.birthday}"></h4>
+	<h4> 受け取るobjectデータ:<span th:text="${#dates.format(user.birthday,'yyyy-MM-dd HH:mm:ss')}"></h4>
+	
+	<input type="text" name="username" th:value="${user.name}">
+	
+	<h4> プロジェクトの名:<span th:text="@{/}"></h4>
+	
+	<hr>
+	<ul>
+		
+		<li th:each="user:${users}">
+			id:<span th:text="${user.id}"></span>
+			name:<span th:text="${user.name}"></span>
+			salary:<span th:text="${user.salary}"></span>
+			birthday:<span th:text="${#dates.format(user.birthday,'yyyy-MM-dd HH:mm:ss')}"></span>
+	
+		</li>
+	</ul>
+	<ul>
+		<li th:each="user,state:${users}">
+			id:<span th:text="${user.id}"></span>
+			state count:<span th:text="${state.count}"></span>
+			state odd:<span th:text="${state.odd}"></span>
+			state even:<span th:text="${state.even}"></span>
+			state size:<span th:text="${state.index}"></span>
+			state first:<span th:text="${state.first}"></span>
+			state last:<span th:text="${state.last}"></span>
+			state current:<span th:text="${state.current}"></span>
+		</li>
+	</ul>
+	<h4> 受け取るsessionデータ:<span th:text="${session.username1}"></span></h4>
+	<h4> 受け取るsessionデータ:<span th:text="${session.username}"></span></h4>
+	<ul>
+		
+		<li th:each="user:${users}">
+			id:<span th:text="${user.id}"></span>
+			name:<span th:text="${user.name}"></span>
+			salary:<span th:text="${user.salary}"></span>
+			birthday:<span th:text="${#dates.format(user.birthday,'yyyy-MM-dd HH:mm:ss')}"></span>
+	
+		</li>
+	</ul>
+	<div th:if="${age<=25}">
+		show me!
+	</div>
+	<button onclick="text()">テスト</button>
+	
+	
+</body>
+</html>

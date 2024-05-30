@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>emplist</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #wrap {
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            max-width: 800px;
+            width: 90%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        #header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            border-radius: 10px 10px 0 0;
+        }
+        #rightheader {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        #rightheader p {
+            margin: 0;
+            font-size: 14px;
+        }
+        #rightheader a {
+            color: white;
+            text-decoration: none;
+        }
+        #title {
+            font-size: 24px;
+            margin: 0;
+        }
+        #title a {
+            color: white;
+            text-decoration: none;
+        }
+        #content {
+            padding: 20px;
+        }
+        #content h1 {
+            color: #333;
+            text-align: left;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        .search-bar {
+            margin-bottom: 20px;
+            text-align: right;
+        }
+        .search-bar form {
+            display: inline-block;
+        }
+        .search-bar input[type="text"], .search-bar input[type="number"] {
+            padding: 5px;
+            margin: 0 5px;
+            width: 100px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .search-bar input[type="submit"] {
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .search-bar input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        .table th, .table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        .table th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .table tr:hover {
+            background-color: #ddd;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        #footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 0 0 10px 10px;
+        }
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <div id="top_content">
+        <div id="header">
+            <div id="rightheader">
+                <p >
+                    2009/11/20
+                    <br/>
+                    <a th:href="@{/user/logout}">安全退出</a>
+                </p>
+            </div>
+            <div id="topheader">
+                <h1 id="title">
+                    <a >商品管理システム</a>
+                </h1>
+            </div>
+            <div id="navigation">
+            </div>
+        </div>
+        <div id="content">
+            <h1>ようこそ<span th:if="${session.user!=null}"  th:text="${session.user.realname}"></span>さん
+                <span th:if="${session.user==null}">ゲスト</span>
+            </h1>
+            <div class="search-bar">
+                <form th:action="@{/employee/search}" method="post">
+                    商品名<input type="text" name="searchName" style="width: 60px;">
+                    価格<input type="number" name="lowSalary" style="width: 60px;" min="0" max="99999" pattern="\d*">~
+                    <input type="number" name="topSalary" style="width: 60px;" min="0" max="99999" pattern="\d*">
+                    到着日<input type="text" name="dateBegin" style="width: 70px;" placeholder="2000-01-01" pattern="\d{4}-\d{2}-\d{2}" title="正しい日付を入力してください">
+                    <input type="text" name="dateEnd" style="width: 70px;" placeholder="2000-01-01" pattern="\d{4}-\d{2}-\d{2}" title="正しい日付を入力してください">
+                    <input type="submit" class="button" value="検索">
+                </form>
+            </div>
+            <table class="table">
+                <tr class="table_header">
+                    <th>ID</th>
+                    <th>商品名</th>
+                    <th>商品画像</th>
+                    <th>商品価格</th>
+                    <th>到着日</th>
+                    <th>操作</th>
+                </tr>
+                <tr th:each="employee,state:${employeeList}" th:class="${state.odd?'row1':'row2'}">
+                    <td><span th:text="${employee.id}"></span></td>
+                    <td><span th:text="${employee.name}"></span></td>
+                    <td><img th:src="@{/}+${employee.photo}" style="height: 40px;"></td>
+                    <td><span th:text="${employee.salary}"></span></td>
+                    <td><span th:text="${#dates.format(employee.birthday,'yyyy-MM-dd')}"></span></td>
+                    <td>
+                        <a href="javascript:;" th:onclick="'delEmp('+${employee.id}+')'">削除</a>&nbsp;
+                        <a th:href="@{/employee/detail(id=${employee.id})}">更新</a>
+                    </td>
+                </tr>
+            </table>
+            <p>
+                <input type="button" class="button" value="商品を追加する" onclick="addEmp()"/>
+            </p>
+            <script>
+                function addEmp(){
+                    location.href='[[@{/addEmp}]]'
+                }
+                
+                function delEmp(id){
+                    console.log(id)
+                    if(window.confirm("この商品情報を削除しますか")){
+                        //console.log('true')
+                        location.href="[[@{/employee/delete?id=}]]"+id
+                    }    
+                }
+            </script>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footer_bg">
+            ABC@126.com
+        </div>
+    </div>
+</div>
+</body>
+</html>

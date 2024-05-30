@@ -1,0 +1,35 @@
+2024-05-09T13:50:06.616+09:00  INFO 18456 --- [main] com.eden.EmphtmlApplication              : Starting EmphtmlApplication using Java 17.0.10 with PID 18456 (C:\KuGou\eclipaeAA\workspace202404\emphtml\target\classes started by Qq145 in C:\KuGou\eclipaeAA\workspace202404\emphtml)
+2024-05-09T13:50:06.617+09:00 DEBUG 18456 --- [main] com.eden.EmphtmlApplication              : Running with Spring Boot v3.2.5, Spring v6.1.6
+2024-05-09T13:50:06.618+09:00  INFO 18456 --- [main] com.eden.EmphtmlApplication              : No active profile set, falling back to 1 default profile: "default"
+2024-05-09T13:50:07.418+09:00  INFO 18456 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 20252 (http)
+2024-05-09T13:50:07.429+09:00  INFO 18456 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-09T13:50:07.432+09:00  INFO 18456 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-09T13:50:07.479+09:00  INFO 18456 --- [main] o.a.c.c.C.[.[localhost].[/empthymeleaf]  : Initializing Spring embedded WebApplicationContext
+2024-05-09T13:50:07.479+09:00  INFO 18456 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 824 ms
+2024-05-09T13:50:07.996+09:00  INFO 18456 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 20252 (http) with context path '/empthymeleaf'
+2024-05-09T13:50:08.003+09:00  INFO 18456 --- [main] com.eden.EmphtmlApplication              : Started EmphtmlApplication in 1.741 seconds (process running for 2.238)
+2024-05-09T13:50:55.930+09:00  INFO 18456 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-05-09T13:50:57.639+09:00  INFO 3568 --- [main] com.eden.EmphtmlApplication              : Starting EmphtmlApplication using Java 17.0.10 with PID 3568 (C:\KuGou\eclipaeAA\workspace202404\emphtml\target\classes started by Qq145 in C:\KuGou\eclipaeAA\workspace202404\emphtml)
+2024-05-09T13:50:57.640+09:00 DEBUG 3568 --- [main] com.eden.EmphtmlApplication              : Running with Spring Boot v3.2.5, Spring v6.1.6
+2024-05-09T13:50:57.640+09:00  INFO 3568 --- [main] com.eden.EmphtmlApplication              : No active profile set, falling back to 1 default profile: "default"
+2024-05-09T13:50:58.435+09:00  INFO 3568 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 20252 (http)
+2024-05-09T13:50:58.445+09:00  INFO 3568 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-09T13:50:58.445+09:00  INFO 3568 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-09T13:50:58.492+09:00  INFO 3568 --- [main] o.a.c.c.C.[.[localhost].[/empthymeleaf]  : Initializing Spring embedded WebApplicationContext
+2024-05-09T13:50:58.492+09:00  INFO 3568 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 814 ms
+2024-05-09T13:50:59.000+09:00  INFO 3568 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 20252 (http) with context path '/empthymeleaf'
+2024-05-09T13:50:59.008+09:00  INFO 3568 --- [main] com.eden.EmphtmlApplication              : Started EmphtmlApplication in 1.707 seconds (process running for 2.206)
+2024-05-09T13:56:15.932+09:00  INFO 23732 --- [main] com.eden.EmphtmlApplication              : Starting EmphtmlApplication using Java 17.0.10 with PID 23732 (C:\KuGou\eclipaeAA\workspace202404\emphtml\target\classes started by Qq145 in C:\KuGou\eclipaeAA\workspace202404\emphtml)
+2024-05-09T13:56:15.932+09:00 DEBUG 23732 --- [main] com.eden.EmphtmlApplication              : Running with Spring Boot v3.2.5, Spring v6.1.6
+2024-05-09T13:56:15.934+09:00  INFO 23732 --- [main] com.eden.EmphtmlApplication              : No active profile set, falling back to 1 default profile: "default"
+2024-05-09T13:56:16.754+09:00  INFO 23732 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 20252 (http)
+2024-05-09T13:56:16.766+09:00  INFO 23732 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-09T13:56:16.766+09:00  INFO 23732 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-09T13:56:16.813+09:00  INFO 23732 --- [main] o.a.c.c.C.[.[localhost].[/empthymeleaf]  : Initializing Spring embedded WebApplicationContext
+2024-05-09T13:56:16.813+09:00  INFO 23732 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 839 ms
+2024-05-09T13:56:17.361+09:00  INFO 23732 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 20252 (http) with context path '/empthymeleaf'
+2024-05-09T13:56:17.368+09:00  INFO 23732 --- [main] com.eden.EmphtmlApplication              : Started EmphtmlApplication in 1.795 seconds (process running for 2.474)
+2024-05-09T13:56:27.934+09:00  INFO 23732 --- [http-nio-20252-exec-1] o.a.c.c.C.[.[localhost].[/empthymeleaf]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-09T13:56:27.935+09:00  INFO 23732 --- [http-nio-20252-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-09T13:56:27.936+09:00  INFO 23732 --- [http-nio-20252-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-05-09T14:11:01.500+09:00  INFO 23732 --- [RMI TCP Connection(24)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.

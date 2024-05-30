@@ -1,0 +1,18 @@
+server:
+  port: 20251
+  servlet:
+    context-path: /thymeleaftest
+spring:
+  thymeleaf:
+    prefix:  classpath:/templates/    
+    suffix:  .html  #指定后缀
+    cache:  false   #是否开启缓存，开发中推荐使用false，可以立即生效
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      
+file:
+  upload: C:\\KuGou\\eclipaeAA\\workspace202404\\springthymeleaf\\upload
+  
+dfile: 
+  download: C:\KuGou\eclipaeAA\workspace202404\springthymeleaf\download

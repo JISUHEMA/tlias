@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>マイページ</title>
+    <link rel="stylesheet" href="/mypage/styles.css">
+</head>
+<body>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="/buy" th:href="@{/buy}">買いたい</a></li>
+            <li><a href="/rent" th:href="@{/rent}">借りたい</a></li>
+            <li><a href="/mypage" th:href="@{/mypage}">マイページ</a></li>
+        </ul>
+    </nav>
+
+    <div class="mypage-container">
+        <div class="mypage-left">
+            <h2>マイページ</h2>
+            <div class="mypage-top-button">
+                <button>マイページTOP</button>
+            </div>
+        </div>
+        <div class="mypage-right">
+            <div class="mypage-content">
+                <h3>マイページ</h3>
+                <ul>
+                    <li><a href="#">お気に入りした物件</a></li>
+                    <li><a href="#">保存した検索条件</a></li>
+                    <li><a href="#">最近使用した検索条件</a></li>
+                    <li><a href="#">最近閲覧した物件</a></li>
+                </ul>
+            </div>
+            <div class="mypage-login">
+                <h3>新規登録・ログイン</h3>
+                <ul>
+                    <li><a href="/register" th:href="@{/register}">新規登録</a></li>
+                    <li><a href="/login" th:href="@{/login}">ログイン</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

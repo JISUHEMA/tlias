@@ -1,0 +1,76 @@
+2024-05-09 14:11:03 - com.eden.EmphtmlApplication - INFO - Starting EmphtmlApplication using Java 17.0.10 with PID 28188 (C:\KuGou\eclipaeAA\workspace202404\emphtml\target\classes started by Qq145 in C:\KuGou\eclipaeAA\workspace202404\emphtml)
+2024-05-09 14:11:03 - com.eden.EmphtmlApplication - INFO - Starting EmphtmlApplication using Java 17.0.10 with PID 28188 (C:\KuGou\eclipaeAA\workspace202404\emphtml\target\classes started by Qq145 in C:\KuGou\eclipaeAA\workspace202404\emphtml)
+2024-05-09 14:11:03 - com.eden.EmphtmlApplication - DEBUG - Running with Spring Boot v3.2.5, Spring v6.1.6
+2024-05-09 14:11:03 - com.eden.EmphtmlApplication - DEBUG - Running with Spring Boot v3.2.5, Spring v6.1.6
+2024-05-09 14:11:03 - com.eden.EmphtmlApplication - INFO - No active profile set, falling back to 1 default profile: "default"
+2024-05-09 14:11:03 - com.eden.EmphtmlApplication - INFO - No active profile set, falling back to 1 default profile: "default"
+2024-05-09 14:11:04 - o.s.b.w.e.tomcat.TomcatWebServer - INFO - Tomcat initialized with port 20252 (http)
+2024-05-09 14:11:04 - o.a.coyote.http11.Http11NioProtocol - INFO - Initializing ProtocolHandler ["http-nio-20252"]
+2024-05-09 14:11:04 - o.a.catalina.core.StandardService - INFO - Starting service [Tomcat]
+2024-05-09 14:11:04 - o.a.catalina.core.StandardEngine - INFO - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-09 14:11:04 - o.a.c.c.C.[.[.[/empthymeleaf] - INFO - Initializing Spring embedded WebApplicationContext
+2024-05-09 14:11:04 - o.s.b.w.s.c.ServletWebServerApplicationContext - INFO - Root WebApplicationContext: initialization completed in 852 ms
+2024-05-09 14:11:04 - o.a.coyote.http11.Http11NioProtocol - INFO - Starting ProtocolHandler ["http-nio-20252"]
+2024-05-09 14:11:04 - o.s.b.w.e.tomcat.TomcatWebServer - INFO - Tomcat started on port 20252 (http) with context path '/empthymeleaf'
+2024-05-09 14:11:04 - com.eden.EmphtmlApplication - INFO - Started EmphtmlApplication in 1.738 seconds (process running for 2.464)
+2024-05-09 14:11:04 - com.eden.EmphtmlApplication - INFO - Started EmphtmlApplication in 1.738 seconds (process running for 2.464)
+2024-05-09 14:19:17 - o.a.c.c.C.[.[.[/empthymeleaf] - INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-09 14:19:17 - o.s.web.servlet.DispatcherServlet - INFO - Initializing Servlet 'dispatcherServlet'
+2024-05-09 14:19:17 - o.s.web.servlet.DispatcherServlet - INFO - Completed initialization in 0 ms
+2024-05-09 14:19:17 - com.eden.controller.UserController - INFO - ユーザー名:tom2,名前:山口,パスワード:123,性別:true:b3t4
+2024-05-09 14:19:17 - com.eden.controller.UserController - INFO - ユーザー名:tom2,名前:山口,パスワード:123,性別:true:b3t4
+2024-05-09 14:19:17 - o.a.c.c.C.[.[.[.[dispatcherServlet] - ERROR - Servlet.service() for servlet [dispatcherServlet] in context with path [/empthymeleaf] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "jakarta.servlet.http.HttpSession.getAttribute(String)" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "jakarta.servlet.http.HttpSession.getAttribute(String)" is null
+	at com.eden.controller.UserController.register(UserController.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2024-05-09 14:51:08 - o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - INFO - Application shutdown requested.
+2024-05-09 14:51:08 - o.a.coyote.http11.Http11NioProtocol - INFO - Stopping ProtocolHandler ["http-nio-20252"]
